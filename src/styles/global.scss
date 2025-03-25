@@ -1,0 +1,52 @@
+@use './variables.scss' as *;
+@use './responsive.scss' as *;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.main {
+    font-family: 'Inter', sans-serif;
+    background-color: $main-bg; // Now resolves to #2a3447
+
+    font-family: 'Inter', sans-serif;
+    background-color: $main-bg;
+    min-height: 100vh; /* Ensure it fills the viewport height */
+    width: 100%; /* Ensure it fills the width */
+
+}
+
+.container {
+    display: flex;
+
+}
+
+.menuContainer {
+    width: 130px;
+    padding: 5px 10px;
+    border-right: 2px solid $soft-bg; 
+   
+    @include lg{
+        width: max-content;
+      }
+    }
+
+.contentContainer {
+    padding: 5px 20px;
+    flex-grow: 1;
+    overflow-x: auto;
+    @include lg{
+        width: max-content;
+    }
+}
+
+// Ensure MUI toolbar styles are applied
+.MuiDataGrid-toolbarContainer {
+    flex-direction: row-reverse !important;
+}

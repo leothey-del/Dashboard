@@ -1,0 +1,66 @@
+.dataTable {
+
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+
+  .dataGrid {
+    background-color: white;
+    padding: 5px;
+
+    
+  }
+
+  img {
+    display: block !important;
+    width: 20px !important;
+    height: 20px !important;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .MuiDataGrid-root,
+  .MuiDataGrid-columnHeaders,
+  .MuiDataGrid-virtualScroller,
+  .MuiDataGrid-footerContainer {
+    background-color: white !important;
+  }
+
+  .MuiDataGrid-root {
+    font-size: 10px !important;
+  }
+
+  .MuiDataGrid-columnHeaders {
+    font-size: 9px !important;
+  }
+
+  .MuiDataGrid-cell {
+    font-size: 9px !important;
+  }
+
+  .MuiTablePagination-root {
+    font-size: 9px !important;
+  }
+
+  // Add styles for the action container and its children
+  .action {
+    display: flex;           // Use flexbox to arrange View and Delete side by side
+    gap: 5px;              // Add spacing between View and Delete
+    align-items: center;    // Vertically center the items
+  }
+
+  .view {
+    color: #007bff;         // Example: Blue color for visibility
+    cursor: pointer;        // Indicate it's clickable
+    font-weight: bold;      // Make it stand out
+  }
+
+  .delete {
+    color: #ff0000;         // Example: Red color for visibility
+    cursor: pointer;        // Indicate it's clickable
+    font-weight: bold;      // Make it stand out
+  }
+}
+
+
+
