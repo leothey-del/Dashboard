@@ -1,10 +1,11 @@
 import "./home.scss";
-import TopBox from "../../components/topBox/TopBox";
+
 import ChartBox from "../../components/chartBox/ChartBox";
 import { chartBoxUser } from "../../data";
 import BarChartBox from "../../components/barChartBox/BarChartBox";
 import PieChartBox from "../../components/pieChartBox/PieChartBox";
 import BigChartBox from "../../components/bigChartBox/BigChartBox";
+import TopBox from "../../components/topBox/TopBox";
 import {
   barChartBoxRevenue,
   barChartBoxVisit,
