@@ -1,5 +1,5 @@
 import "./home.scss";
-import TopBox from "../../components/topBox/TopBox.jsx";
+import TopBox from "../../components/topbox/TopBox.jsx";
 import ChartBox from "../../components/chartBox/ChartBox.jsx";
 import BarChartBox from "../../components/barChartBox/BarChartBox.jsx";
 import PieChartBox from "../../components/pieChartBox/PieChartBox.jsx";
