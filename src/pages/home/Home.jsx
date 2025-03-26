@@ -1,54 +1,44 @@
 import "./home.scss";
-
-import ChartBox from "../../components/chartBox/ChartBox";
+import TopBox from "../../components/topBox/TopBox.jsx";
+import ChartBox from "../../components/chartBox/ChartBox.jsx";
+import BarChartBox from "../../components/barChartBox/BarChartBox.jsx";
+import PieChartBox from "../../components/pieChartBox/PieChartBox.jsx";
+import BigChartBox from "../../components/bigChartBox/BigChartBox.jsx";
 import { chartBoxUser } from "../../data";
-import BarChartBox from "../../components/barChartBox/BarChartBox";
-import PieChartBox from "../../components/pieChartBox/PieChartBox";
-import BigChartBox from "../../components/bigChartBox/BigChartBox";
-import TopBox from "../../components/topBox/TopBox";
-import {
-  barChartBoxRevenue,
-  barChartBoxVisit,
-} from "../../data";
-
+import { barChartBoxRevenue, barChartBoxVisit } from "../../data";
 
 const Home = () => {
   return (
     <div className="home">
       <div className="box box1">
-       <TopBox/>
+        <TopBox />
       </div>
       <div className="box box2">
-      <ChartBox {...chartBoxUser}/>
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box3">
-      <ChartBox {...chartBoxUser}/>
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box4">
-      <PieChartBox />
+        <PieChartBox />
       </div>
       <div className="box box5">
-      <ChartBox {...chartBoxUser}/>
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box6">
-      <ChartBox {...chartBoxUser}/>
+        <ChartBox {...chartBoxUser} />
       </div>
       <div className="box box7">
-      <BigChartBox />
+        <BigChartBox />
       </div>
       <div className="box box8">
-      <BarChartBox {...barChartBoxVisit} />
+        <BarChartBox {...barChartBoxVisit} />
       </div>
       <div className="box box9">
-      <BarChartBox {...barChartBoxRevenue} />
+        <BarChartBox {...barChartBoxRevenue} />
       </div>
     </div>
   );
 };
 
 export default Home;
-
-
-
-
- 
