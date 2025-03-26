@@ -1,7 +1,7 @@
 
 
 // Users.jsx
-import "./Users.scss";
+import "./users.scss";
 import DataTable from "../../components/dataTable/DataTable";
 import { userRows } from "../../data";
 import Add from "../../components/add/Add";
